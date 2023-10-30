@@ -4,4 +4,4 @@ steps:
   - gcloud
   - app
   - deploy
-  - duskin-flask-app
+  - cloud-build-test
