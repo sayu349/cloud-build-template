@@ -4,4 +4,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '元に戻しました'
+    return '実行できているか確認します'
