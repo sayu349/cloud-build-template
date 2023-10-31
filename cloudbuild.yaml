@@ -1,3 +1,12 @@
 steps:
+
+# GitHubからリポジトリをクローン
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/sayu349/duskin_flask_app']
+
+# Pythonアプリケーションの場合、依存関係のインストール
+- name: 'gcr.io/cloud-builders/python'
+  args: ['pip', 'install', '-r', 'requirements.txt']
+
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['app', 'deploy', 'app.yaml']
