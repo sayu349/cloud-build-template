@@ -4,4 +4,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '実行できているか確認します'
+    return 'cloudbuildが動作しているか確認します。'
